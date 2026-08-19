@@ -1,0 +1,70 @@
+/* Typing hero */
+.cd-headline.clip span{
+  padding: 0;
+}
+
+.banner .cd-headline {
+  font-size: 56px;
+  line-height: 1.18;
+}
+
+.banner .cd-headline .cd-words-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.banner-3{
+  position: relative;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: .58;
+  filter: brightness(.68) contrast(1.08) saturate(.72);
+  transform: scale(1.015);
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.82) 0%, rgba(0,0,0,.68) 48%, rgba(0,0,0,.48) 100%),
+    linear-gradient(180deg, rgba(0,0,0,.30), rgba(0,0,0,.62));
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  .banner .cd-headline {
+    font-size: 44px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner {
+    min-height: 680px;
+  }
+
+  .banner .cd-headline {
+    font-size: 35px;
+  }
+}

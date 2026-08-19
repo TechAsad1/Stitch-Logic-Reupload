@@ -1,0 +1,182 @@
+@@include('header.htm')
+@@include('blocks/nav-2.htm')
+@@include('blocks/page-title.htm', {
+"title": "Get in Touch",
+"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, quam."
+})
+<!-- contact form start -->
+<section class="contact section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0 col-md-4">
+                <h4>Contact Info</h4>
+                <p>Lorem ipsum dolor sit amet, conse adipisicing elit libero incidunt quod.</p>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0 col-md-4">
+                <h4>Address</h4>
+                <p>3971 Wines Lane Houston, Texas 77036 <br>363 Detroit Street</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h4>Contact</h4>
+                 <p class="mb-0">info@example.com</p>
+                <p class="mb-0">1800 667 3322</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="google-map">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5 contact-title">
+                    <h2>Contact us</h2>
+                </div>
+
+                <form id="contact-form" class="contact__form mt-5" method="">
+             <!-- form message -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                            Your message was sent successfully.
+                        </div>
+                    </div>
+                </div>
+                <!-- end message -->
+                <div class="form-row">
+                    <div class="col-lg-6">
+                        <div class="form-group mb-3">
+                            <input name="name" type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group mb-3">
+                            <input name="name" type="text" class="form-control" placeholder="Your Subject">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="form-group mb-3">
+                            <input name="email" type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                         <div class="form-group-2 mb-4">
+                            <textarea name="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-main" name="submit" type="submit">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>  
+        </div>
+    </div>
+</section>
+
+
+<style>
+/* =========================================
+   CONTACT PAGE — EMBROIDERY THEME
+   Navy: #0b1d2b
+   Rose: #d29290
+   ========================================= */
+
+/* Contact Section */
+.contact {
+    background: #ffffff;
+}
+
+/* Contact Information Headings */
+.contact h4 {
+    color: #0b1d2b;
+    font-weight: 700;
+    transition: color 0.4s ease;
+}
+
+.contact h4:hover {
+    color: #d29290;
+}
+
+/* Contact Information Text */
+.contact .row:first-child p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Map */
+.google-map {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#map {
+    min-height: 350px;
+}
+
+/* Contact Title */
+.contact-title h2 {
+    color: #0b1d2b;
+    font-weight: 700;
+}
+
+/* Form Inputs */
+.contact__form .form-control {
+    border: 1px solid #e2e2e2;
+    color: #0b1d2b;
+    background: #fff;
+    transition: all 0.4s ease;
+}
+
+.contact__form .form-control:focus {
+    border-color: #d29290;
+    box-shadow: 0 0 0 2px rgba(210, 146, 144, 0.12);
+    outline: none;
+}
+
+/* Placeholder */
+.contact__form .form-control::placeholder {
+    color: #999;
+}
+
+/* Send Message Button */
+.contact__form .btn-main {
+    background: #0b1d2b;
+    border-color: #0b1d2b;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.contact__form .btn-main:hover {
+    background: #d29290;
+    border-color: #d29290;
+    color: #fff;
+}
+
+/* Success Message */
+.contact__form .alert-success {
+    background: rgba(210, 146, 144, 0.10);
+    border-color: #d29290;
+    color: #0b1d2b;
+}
+
+/* Smooth transitions */
+.contact h4,
+.contact-title h2,
+.contact__form .form-control,
+.contact__form .btn-main {
+    transition: all 0.4s ease;
+}
+
+.page-title h1:after {
+    background-color: #d29290;
+}
+</style>
+
+@@include('blocks/footer.htm')
+@@include('footer.htm')
