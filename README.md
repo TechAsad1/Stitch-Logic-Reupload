@@ -30,11 +30,11 @@ bun dev
 
 ## Author 
 ```
-Design and code is completely written by Themefisher and development team. 
+Design and code is completely written by TechAsad and development team. 
 ```
 
 ## License
 
- - Design and Code is Copyright &copy; <a href="https://themefisher.com/" target="_blank">Themefisher</a>
+ - Design and Code is Copyright &copy; <a href="#" target="_blank">TechAsad</a>
  - Licensed cover under [MIT]
- - Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+ - Distributed by <a href="#" target="_blank">TechAsad</a>
