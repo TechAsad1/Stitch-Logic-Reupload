@@ -148,7 +148,7 @@
 <!-- Hero / Typing Slider Start -->
 <section class="section banner embroidery-hero">
   <video class="banner-video" autoplay muted loop playsinline preload="metadata">
-    <source src="videos/Embroidery_Machine.mp4" type="video/mp4">
+    <source src="videos/wide.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
@@ -200,7 +200,7 @@
 
 /* Dark overlay for professional look */
 .embroidery-hero .banner-overlay {
-    background: rgba(11, 29, 43, 0.72);
+    background: rgba(11, 29, 43,0.7);
 }
 
 /* Hero Content */
@@ -277,7 +277,7 @@
 <!-- Hero / Typing Slider End -->
 
 <!-- Embroidery Work Start -->
-<section class="portfolio embroidery-work section">
+<section class="portfolio embroidery-work section" id="portfolio">
   <div class="container">
     <div class="row justify-content-between align-items-end mb-5">
       <div class="col-lg-7">
@@ -287,59 +287,14 @@
       </div>
 
 
-<div class="col-lg-12 text-lg-left mt-8 mt-lg-4">
-    <div class="btn-group btn-group-toggle embroidery-filters" data-toggle="buttons">
-
-        <label class="btn active">
-            <input type="radio" name="shuffle-filter" value="all" checked="checked">
-            All Work
-        </label>
-
-        <label class="btn">
-            <input type="radio" name="shuffle-filter" value="logo">
-            Logo Embroidery
-        </label>
-
-        <label class="btn">
-            <input type="radio" name="shuffle-filter" value="apparel">
-            Apparel Branding
-        </label>
-
-    </div>
+<div class="col-12 mt-4 text-lg-left mt-8 mt-lg-4">
+    <div id="portfolioCategories" class="portfolio-categories"></div>
 </div>
 
-<style>
-
-.embroidery-filters {
-    justify-content: flex-start;
-    gap: 15px;
-}
-
-.embroidery-filters .btn {
-    background: transparent !important;
-    color: #0b1d2b;
-    border-color: #0b1d2b;
-    margin: 0 !important;
-}
-
-.embroidery-filters .btn:hover,
-.embroidery-filters .btn:focus {
-    background: transparent !important;
-    color: #d29290;
-    border-color: #d29290;
-}
-
-.embroidery-filters .btn.active,
-.embroidery-filters .btn.active:hover {
-    background: transparent !important;
-    color: #d29290;
-    border-color: #d29290;
-}
-</style>
-
     </div>
 
-    <div class="row shuffle-wrapper portfolio-gallery">
+    <div class="row shuffle-wrapper portfolio-gallery portfolio-source d-none">
+
       <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["logo"]'>
         <div class="position-relative inner-box">
           <div class="image position-relative">
@@ -427,70 +382,1083 @@
           </div>
         </div>
       </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["3D-puff"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/3D-puff/36.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["3D-puff"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/3D-puff/37.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["3D-puff"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/3D-puff/38.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["applique"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/applique/32.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["applique"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/applique/45.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["applique"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/applique/50.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["cap-sew-out"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/cap-sew-out/10.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["cap-sew-out"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/cap-sew-out/11.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["cap-sew-out"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/cap-sew-out/12.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["cap-sew-out"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/cap-sew-out/28.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["cap-sew-out"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/cap-sew-out/43.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["cap-sew-out"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/cap-sew-out/49.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["cap-sew-out"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/cap-sew-out/58.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["cap-sew-out"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/cap-sew-out/59.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["cap-sew-out"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/cap-sew-out/66.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["cap-sew-out"]'>
+
+          <div class="position-relative inner-box">
+
+              <video class="img-fluid w-100"
+                    muted
+                    controls
+                    preload="metadata">
+
+                  <source src="videos/46.mp4"
+                          type="video/mp4">
+
+              </video>
+
+          </div>
+
+      </div>      
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/13.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/15.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/16.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/19.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/20.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/21.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/22.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/23.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/48.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/55.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/56.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/57.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/60.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/61.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["customOrder"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/customOrder/67.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["kids-sew-out"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/kids-sew-out/53.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["kids-sew-out"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/kids-sew-out/64.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["kids-sew-out"]'>
+
+          <div class="position-relative inner-box">
+
+              <video class="img-fluid w-100"
+                    muted
+                    controls
+                    preload="metadata">
+
+                  <source src="videos/68.mp4"
+                          type="video/mp4">
+
+              </video>
+
+          </div>
+
+      </div>      
+
+      <!-- Video -->
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["kids-sew-out"]'>
+
+          <div class="position-relative inner-box">
+
+              <video class="img-fluid w-100"
+                    muted
+                    controls
+                    preload="metadata">
+
+                  <source src="videos/69.mp4"
+                          type="video/mp4">
+
+              </video>
+
+          </div>
+
+      </div>      
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["medicalStitch"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/medicalStitch/29.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["medicalStitch"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/medicalStitch/44.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["medicalStitch"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/medicalStitch/51.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["medicalStitch"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/medicalStitch/54.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["medicalStitch"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/medicalStitch/62.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["medicalStitch"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/medicalStitch/63.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["medicalStitch"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/medicalStitch/65.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["patches"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/patches/14.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["patches"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/patches/27.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["patches"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/patches/30.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["patches"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/patches/31.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["patches"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/patches/33.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["patches"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/patches/34.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["patches"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/patches/35.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["pet"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/pet/24.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["pet"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/pet/25.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["pet"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/pet/26.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["pet"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/pet/39.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["pet"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/pet/40.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["pet"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/pet/41.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["pet"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/pet/42.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["pet"]'>
+
+          <div class="position-relative inner-box">
+
+              <video class="img-fluid w-100"
+                    muted
+                    controls
+                    preload="metadata">
+
+                  <source src="videos/47.mp4"
+                          type="video/mp4">
+
+              </video>
+
+          </div>
+
+      </div>      
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["portraitStitch"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/portraitStitch/17.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["portraitStitch"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/portraitStitch/18.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 shuffle-item" data-groups='["tinyDetailedDesigns"]'>
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="images/portfolio/tinyDetailedDesigns/52.jpeg" alt="Brand logo embroidery sample" class="img-fluid w-100 d-block">
+            <div class="overlay-box"><div class="overlay-inner">
+              <div class="overlay-content"><h5 class="mb-0">Brand Logo Stitching</h5><p>Logo Embroidery</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
+  
 </section>
+
+<style>
+
+.embroidery-filters {
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.embroidery-filters .btn {
+    background: transparent !important;
+    color: #0b1d2b;
+    border-color: #0b1d2b;
+    margin: 0 !important;
+}
+
+.embroidery-filters .btn:hover,
+.embroidery-filters .btn:focus {
+    background: transparent !important;
+    color: #d29290;
+    border-color: #d29290;
+}
+
+.embroidery-filters .btn.active,
+.embroidery-filters .btn.active:hover {
+    background: transparent !important;
+    color: #d29290;
+    border-color: #d29290;
+}
+
+
+/* =====================================
+   PORTFOLIO CATEGORY CARDS
+===================================== */
+
+.portfolio-categories {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.portfolio-category-card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #0b1d2b;
+    text-decoration: none !important;
+    box-shadow: 0 8px 25px rgba(11, 29, 43, .08);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.portfolio-category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(11, 29, 43, .18);
+}
+
+.portfolio-category-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.portfolio-category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .6s ease;
+}
+
+.portfolio-category-card:hover .portfolio-category-image img {
+    transform: scale(1.09);
+}
+
+.portfolio-category-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(11, 29, 43, .65),
+        transparent 65%
+    );
+}
+
+.portfolio-category-content {
+    padding: 23px 25px 25px;
+    background: #fff;
+}
+
+.portfolio-category-content h4 {
+    color: #0b1d2b;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.portfolio-category-content p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.portfolio-category-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.portfolio-project-count {
+    color: #d29290;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portfolio-view-link {
+    color: #0b1d2b;
+    font-size: 13px;
+    font-weight: 700;
+    transition: color .3s ease;
+}
+
+.portfolio-category-card:hover .portfolio-view-link {
+    color: #d29290;
+}
+
+/* =====================================
+   CATEGORY DETAIL GALLERY
+===================================== */
+
+.portfolio-detail-hero {
+    background: #0b1d2b;
+    padding: 65px 0;
+    margin-bottom: 55px;
+}
+
+.portfolio-detail-hero h1 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.portfolio-detail-hero p {
+    color: rgba(255,255,255,.7);
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+.portfolio-back-link {
+    display: inline-block;
+    color: #d29290;
+    margin-bottom: 25px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portfolio-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    padding-bottom: 70px;
+}
+
+.portfolio-detail-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f4f4f4;
+    cursor: pointer;
+    min-height: 230px;
+}
+
+.portfolio-detail-item img,
+.portfolio-detail-item video {
+    width: 100%;
+    height: 100%;
+    min-height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: transform .5s ease;
+}
+
+.portfolio-detail-item:hover img {
+    transform: scale(1.06);
+}
+
+.portfolio-detail-item .portfolio-media-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 35px 18px 15px;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(transparent, rgba(11,29,43,.8));
+    pointer-events: none;
+}
+
+/* =====================================
+   LIGHTBOX
+===================================== */
+
+.portfolio-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(5, 13, 20, .94);
+    padding: 30px;
+}
+
+.portfolio-lightbox.show {
+    display: flex;
+}
+
+.portfolio-lightbox img,
+.portfolio-lightbox video {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+}
+
+.portfolio-lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    background: transparent;
+    border: 0;
+    font-size: 38px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+    .portfolio-categories {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .portfolio-detail-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575px) {
+    .portfolio-categories,
+    .portfolio-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .portfolio-category-image {
+        height: 220px;
+    }
+
+    .portfolio-detail-hero h1 {
+        font-size: 30px;
+    }
+}
+
+</style>
+
 
 <!-- Embroidery Work End -->
 
 <!-- Services Start -->
 <section class="section service-home border-top" id="services">
   <div class="container">
+    <!-- Top Intro -->
     <div class="row">
-      <div class="col-lg-7">
+      <div class="col-lg-8">
         <span class="section-kicker">WHAT WE DO</span>
-        <h2 class="mb-2">Core Embroidery Services.</h2>
-        <p class="mb-5">Professional embroidery solutions for fashion brands, businesses, uniforms, promotional wear and custom clothing.</p>
+        <h2 class="mb-2">Core Embroidery &amp; Digitizing Services.</h2>
+        <p class="mb-5">Helping embroidery businesses, apparel brands, and professionals bring their artwork to life through professional embroidery digitizing.</p>
       </div>
     </div>
 
+    <!-- 9-Card Service Grid -->
     <div class="row">
+      <!-- 1 -->
       <div class="col-lg-4 col-md-6">
         <div class="service-item embroidery-service mb-5" data-aos="fade-left">
-          <i class="ti-brush-alt"></i>
-          <h4 class="my-3">Custom Embroidery</h4>
-          <p>Turn your artwork, names and creative ideas into detailed embroidery for garments and accessories.</p>
+          <i class="ti-star"></i>
+          <h4 class="my-3">Logo &amp; Custom Digitizing</h4>
+          <p>Clean, production-ready embroidery digitizing tailored for brand logos and custom designs.</p>
         </div>
       </div>
+
+      <!-- 2 -->
       <div class="col-lg-4 col-md-6">
         <div class="service-item embroidery-service mb-5" data-aos="fade-left" data-aos-delay="150">
-          <i class="ti-star"></i>
-          <h4 class="my-3">Logo Embroidery</h4>
-          <p>Give your brand a professional look with clean, durable logo embroidery on apparel and workwear.</p>
+          <i class="ti-crown"></i>
+          <h4 class="my-3">3D Puff &amp; Cap Digitizing</h4>
+          <p>Specialized stitch planning and density control for structured caps and raised 3D puff embroidery.</p>
         </div>
       </div>
+
+      <!-- 3 -->
       <div class="col-lg-4 col-md-6">
         <div class="service-item embroidery-service mb-5" data-aos="fade-left" data-aos-delay="300">
-          <i class="ti-layout"></i>
-          <h4 class="my-3">Embroidery Digitizing</h4>
-          <p>We prepare embroidery-ready files with careful stitch planning, sizing and detail optimization.</p>
+          <i class="ti-tag"></i>
+          <h4 class="my-3">Jacket &amp; Hoodie Digitizing</h4>
+          <p>Fabric-specific underlay and stitch optimization for heavy outerwear, jackets, and hoodies.</p>
         </div>
       </div>
+
+      <!-- 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item embroidery-service mb-5" data-aos="fade-left">
+          <i class="ti-text"></i>
+          <h4 class="my-3">Small Lettering &amp; Appliqué</h4>
+          <p>Crisp, readable micro-lettering and clean appliqué borders engineered for smooth stitching.</p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item embroidery-service mb-5" data-aos="fade-left" data-aos-delay="150">
+          <i class="ti-heart"></i>
+          <h4 class="my-3">Kids &amp; Baby Designs</h4>
+          <p>Soft, low-density, and delicate embroidery digitizing crafted specifically for kids and baby apparel.</p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item embroidery-service mb-5" data-aos="fade-left" data-aos-delay="300">
+          <i class="ti-camera"></i>
+          <h4 class="my-3">Pet Portrait &amp; Photo Digitizing</h4>
+          <p>Detailed color blending and stitch mapping to turn portraits and photos into realistic embroidery.</p>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item embroidery-service mb-5 mb-lg-0" data-aos="fade-left">
+          <i class="ti-image"></i>
+          <h4 class="my-3">DTF Printing Files</h4>
+          <p>High-resolution, transparent PNG files prepped and optimized for vibrant DTF printing.</p>
+        </div>
+      </div>
+
+      <!-- 8 -->
       <div class="col-lg-4 col-md-6">
         <div class="service-item embroidery-service mb-5 mb-lg-0" data-aos="fade-left" data-aos-delay="150">
-          <i class="ti-user"></i>
-          <h4 class="my-3">Uniform Embroidery</h4>
-          <p>Professional names, logos and department branding for staff uniforms, schools and organizations.</p>
+          <i class="ti-layers"></i>
+          <h4 class="my-3">Screen Printing Artwork</h4>
+          <p>Clean, color-separated, print-ready artwork designed for sharp screen printing results.</p>
         </div>
       </div>
+
+      <!-- 9 -->
       <div class="col-lg-4 col-md-6">
-        <div class="service-item embroidery-service mb-5 mb-lg-0" data-aos="fade-left" data-aos-delay="300">
-          <i class="ti-tag"></i>
-          <h4 class="my-3">Cap &amp; Apparel Embroidery</h4>
-          <p>Make caps, jackets, shirts, polos and other garments stand out with premium stitched branding.</p>
+        <div class="service-item embroidery-service mb-0" data-aos="fade-left" data-aos-delay="300">
+          <i class="ti-vector"></i>
+          <h4 class="my-3">Vector Art &amp; File Conversion</h4>
+          <p>Precision vector tracing and production-ready file conversions in AI, EPS, SVG, and PDF formats.</p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="service-item embroidery-service mb-0" data-aos="fade-left" data-aos-delay="450">
-          <i class="ti-package"></i>
-          <h4 class="my-3">Bulk Production</h4>
-          <p>Consistent embroidery for large orders with flexible quantities, reliable quality and dependable service.</p>
-        </div>
+    </div>
+
+    <!-- Bottom Quality Guarantee & CTA -->
+    <div class="row mt-5 pt-4 border-top service-footer">
+      <div class="col-lg-8">
+        <p class="mb-2">With a focus on stitch quality, proper density, underlay, and fabric-specific techniques, I deliver reliable, production-ready embroidery files.</p>
+        <p class="mb-0 cta-line">Looking for a dependable embroidery digitizing partner? <a href="contact.html">Feel free to reach out for custom projects and digitizing inquiries.</a></p>
       </div>
     </div>
   </div>
 </section>
-
 
 <style>
 /* ==============================
@@ -548,7 +1516,32 @@
 .service-home .embroidery-service:hover h4 {
     color: #d29290;
 }
+
+/* Bottom Guarantee & CTA */
+.service-home .service-footer {
+    border-top-color: rgba(11, 29, 43, 0.12) !important;
+}
+
+.service-home .service-footer p {
+    color: #666;
+}
+
+.service-home .service-footer .cta-line {
+    color: #0b1d2b;
+    font-weight: 500;
+}
+
+.service-home .service-footer .cta-line a {
+    color: #d29290;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.service-home .service-footer .cta-line a:hover {
+    color: #0b1d2b;
+}
 </style>
+
 <!-- Services End -->
 
 <!-- Pricing Start -->
@@ -1017,6 +2010,151 @@
 }
 </style>
 <!-- About / CTA End -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const categories = [
+        {
+            id: "logo",
+            name: "Logo Embroidery",
+            description: "Professional custom logos with clean stitching and production-quality finishing."
+        },
+        {
+            id: "apparel",
+            name: "Apparel Branding",
+            description: "Custom embroidery for uniforms, shirts, jackets and branded apparel."
+        },
+        {
+            id: "3D-puff",
+            name: "3D Puff",
+            description: "Premium raised embroidery designs with a bold dimensional appearance."
+        },
+        {
+            id: "customOrder",
+            name: "Custom Orders",
+            description: "Unique embroidery projects created according to individual customer requirements."
+        },
+        {
+            id: "patches",
+            name: "Embroidery Patches",
+            description: "Custom embroidered patches with detailed stitching and professional finishing."
+        },
+        {
+            id: "applique",
+            name: "Applique",
+            description: "Creative applique embroidery with beautiful fabric combinations."
+        },
+        {
+            id: "pet",
+            name: "Pet Embroidery",
+            description: "Personalized pet designs and creative embroidery artwork."
+        },
+        {
+            id: "medicalStitch",
+            name: "Medical Stitch",
+            description: "Professional medical branding and detailed embroidery designs."
+        },
+        {
+            id: "kids-sew-out",
+            name: "Kids Sew-Out",
+            description: "Creative and detailed embroidery designs for kids."
+        },
+        {
+            id: "cap-sew-out",
+            name: "Cap Sew-Out",
+            description: "High-quality cap embroidery and custom headwear branding."
+        },
+        {
+            id: "portraitStitch",
+            name: "Portrait Stitch",
+            description: "Detailed portrait embroidery with precise stitch placement."
+        },
+        {
+            id: "tinyDetailedDesigns",
+            name: "Tiny Detailed Designs",
+            description: "Small-scale embroidery artwork with impressive detailing."
+        }
+    ];
+
+    const sourceItems = document.querySelectorAll(
+        ".portfolio-source .shuffle-item"
+    );
+
+    const container = document.getElementById("portfolioCategories");
+
+    if (!container) return;
+
+    categories.forEach(category => {
+
+        const matchingItems = Array.from(sourceItems).filter(item => {
+
+            try {
+                const groups = JSON.parse(
+                    item.getAttribute("data-groups") || "[]"
+                );
+
+                return groups.includes(category.id);
+
+            } catch {
+                return false;
+            }
+
+        });
+
+        if (!matchingItems.length) return;
+
+        const firstItem = matchingItems[0];
+
+        const coverImage = firstItem.querySelector("img");
+
+        if (!coverImage) return;
+
+        const imagePath = coverImage.getAttribute("src");
+
+        const card = document.createElement("a");
+
+        card.className = "portfolio-category-card";
+
+        card.href = "portfolio-category.html?category=" +
+            encodeURIComponent(category.id);
+
+        card.innerHTML = `
+            <div class="portfolio-category-image">
+                <img
+                    src="${imagePath}"
+                    alt="${category.name}"
+                    loading="lazy">
+            </div>
+
+            <div class="portfolio-category-content">
+
+                <h4>${category.name}</h4>
+
+                <p>${category.description}</p>
+
+                <div class="portfolio-category-footer">
+
+                    <span class="portfolio-project-count">
+                        ${matchingItems.length} Projects
+                    </span>
+
+                    <span class="portfolio-view-link">
+                        Explore Projects →
+                    </span>
+
+                </div>
+
+            </div>
+        `;
+
+        container.appendChild(card);
+
+    });
+
+});
+</script>
 
 <!-- Footer Start -->
 <section class="footer">

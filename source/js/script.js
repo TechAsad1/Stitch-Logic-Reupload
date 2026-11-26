@@ -42,18 +42,23 @@ AOS.init({
     var Shuffle = window.Shuffle;
     var jQuery = window.jQuery;
 
-    var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
-        itemSelector: '.shuffle-item',
-        buffer: 1
-    });
+    var shuffleElement = document.querySelector('.shuffle-wrapper');
 
-    jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
-        var input = evt.currentTarget;
-        if (input.checked) {
-            myShuffle.filter(input.value);
-        }
-    });
+    if (shuffleElement && Shuffle) {
+        var myShuffle = new Shuffle(shuffleElement, {
+            itemSelector: '.shuffle-item',
+            buffer: 1
+        });
 
+        jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+            var input = evt.currentTarget;
+
+            if (input.checked) {
+                myShuffle.filter(input.value);
+            }
+        });
+    }
+    
      $('.portfolio-gallery').each(function () {
         $(this).find('.popup-gallery').magnificPopup({
             type: 'image',

@@ -67,6 +67,151 @@
 </style>
 <!-- About / CTA End -->
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const categories = [
+        {
+            id: "logo",
+            name: "Logo Embroidery",
+            description: "Professional custom logos with clean stitching and production-quality finishing."
+        },
+        {
+            id: "apparel",
+            name: "Apparel Branding",
+            description: "Custom embroidery for uniforms, shirts, jackets and branded apparel."
+        },
+        {
+            id: "3D-puff",
+            name: "3D Puff",
+            description: "Premium raised embroidery designs with a bold dimensional appearance."
+        },
+        {
+            id: "customOrder",
+            name: "Custom Orders",
+            description: "Unique embroidery projects created according to individual customer requirements."
+        },
+        {
+            id: "patches",
+            name: "Embroidery Patches",
+            description: "Custom embroidered patches with detailed stitching and professional finishing."
+        },
+        {
+            id: "applique",
+            name: "Applique",
+            description: "Creative applique embroidery with beautiful fabric combinations."
+        },
+        {
+            id: "pet",
+            name: "Pet Embroidery",
+            description: "Personalized pet designs and creative embroidery artwork."
+        },
+        {
+            id: "medicalStitch",
+            name: "Medical Stitch",
+            description: "Professional medical branding and detailed embroidery designs."
+        },
+        {
+            id: "kids-sew-out",
+            name: "Kids Sew-Out",
+            description: "Creative and detailed embroidery designs for kids."
+        },
+        {
+            id: "cap-sew-out",
+            name: "Cap Sew-Out",
+            description: "High-quality cap embroidery and custom headwear branding."
+        },
+        {
+            id: "portraitStitch",
+            name: "Portrait Stitch",
+            description: "Detailed portrait embroidery with precise stitch placement."
+        },
+        {
+            id: "tinyDetailedDesigns",
+            name: "Tiny Detailed Designs",
+            description: "Small-scale embroidery artwork with impressive detailing."
+        }
+    ];
+
+    const sourceItems = document.querySelectorAll(
+        ".portfolio-source .shuffle-item"
+    );
+
+    const container = document.getElementById("portfolioCategories");
+
+    if (!container) return;
+
+    categories.forEach(category => {
+
+        const matchingItems = Array.from(sourceItems).filter(item => {
+
+            try {
+                const groups = JSON.parse(
+                    item.getAttribute("data-groups") || "[]"
+                );
+
+                return groups.includes(category.id);
+
+            } catch {
+                return false;
+            }
+
+        });
+
+        if (!matchingItems.length) return;
+
+        const firstItem = matchingItems[0];
+
+        const coverImage = firstItem.querySelector("img");
+
+        if (!coverImage) return;
+
+        const imagePath = coverImage.getAttribute("src");
+
+        const card = document.createElement("a");
+
+        card.className = "portfolio-category-card";
+
+        card.href = "portfolio-category.html?category=" +
+            encodeURIComponent(category.id);
+
+        card.innerHTML = `
+            <div class="portfolio-category-image">
+                <img
+                    src="${imagePath}"
+                    alt="${category.name}"
+                    loading="lazy">
+            </div>
+
+            <div class="portfolio-category-content">
+
+                <h4>${category.name}</h4>
+
+                <p>${category.description}</p>
+
+                <div class="portfolio-category-footer">
+
+                    <span class="portfolio-project-count">
+                        ${matchingItems.length} Projects
+                    </span>
+
+                    <span class="portfolio-view-link">
+                        Explore Projects →
+                    </span>
+
+                </div>
+
+            </div>
+        `;
+
+        container.appendChild(card);
+
+    });
+
+});
+</script>
+
 <!-- Footer Start -->
 @@include('blocks/footer.htm')
 <!-- Footer End -->

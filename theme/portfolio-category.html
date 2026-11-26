@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: #!
+ // TWITTER: #!
+ // FACEBOOK: #!
+ // GITHUB: #!
+-->
+
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stitch Logic -- Embroidery Designs</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="TechAsad" />
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+  <link rel="stylesheet" href="plugins/counto/animate.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="plugins/animated-text/animated-text.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  
+
+<!-- Header Start --> 
+
+<nav class="navbar navbar-expand-lg main-nav" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Embroidery" class="img-fluid">
+    </a>
+
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+      aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="ti-align-justify"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample09">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+/* =========================================
+   NAVBAR — EMBROIDERY THEME
+   Navy: #0b1d2b
+   Rose: #d29290
+   ========================================= */
+
+.main-nav {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(11, 29, 43, 0.08);
+    transition: all 0.4s ease;
+}
+
+/* Navigation Links */
+.main-nav .navbar-nav .nav-link {
+    color: #0b1d2b;
+    font-weight: 900;
+    transition: color 0.35s ease;
+}
+
+/* Hover */
+.main-nav .navbar-nav .nav-link:hover {
+    color: #d29290;
+}
+
+/* Active */
+.main-nav .navbar-nav .nav-item.active .nav-link {
+    color: #d29290;
+}
+
+/* Navbar Toggler */
+.main-nav .navbar-toggler {
+    color: #0b1d2b;
+    border-color: transparent;
+    transition: color 0.35s ease;
+}
+
+.main-nav .navbar-toggler:hover,
+.main-nav .navbar-toggler:focus {
+    color: #d29290;
+    outline: none;
+}
+
+/* Toggler Icon */
+.main-nav .navbar-toggler .ti-align-justify {
+    color: inherit;
+}
+
+/* Logo Smooth Effect */
+.main-nav .navbar-brand img {
+    transition: opacity 0.35s ease;
+}
+
+.main-nav .navbar-brand:hover img {
+    opacity: 0.85;
+}
+
+/* Mobile Menu */
+@media (max-width: 991px) {
+
+    .main-nav .navbar-collapse {
+        background: #ffffff;
+        border-top: 1px solid rgba(11, 29, 43, 0.08);
+        padding: 10px 0;
+    }
+
+    .main-nav .navbar-nav .nav-link {
+        padding: 10px 15px;
+    }
+
+    .main-nav .navbar-nav .nav-item.active .nav-link {
+        color: #d29290;
+    }
+}
+</style>
+
+<!-- Header Close -->
+
+
+    <!-- CATEGORY HERO -->
+    <section class="portfolio-detail-hero">
+
+        <div class="container">
+
+            <a href="index.html#portfolio" class="portfolio-back-link">
+                ← Back to Portfolio
+            </a>
+
+            <h1 id="categoryTitle">Our Projects</h1>
+
+            <p id="categoryDescription"></p>
+
+            <div style="color:#d29290; font-size:13px; font-weight:700;">
+                <span id="projectCount">0</span> PROJECTS
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT GALLERY -->
+    <section class="container">
+
+        <div id="portfolioDetailGrid" class="portfolio-detail-grid"></div>
+
+        <div id="portfolioEmpty" class="portfolio-empty"
+             style="display:none;">
+
+            <h3>No Projects Found</h3>
+
+            <p>There are currently no projects in this category.</p>
+
+        </div>
+
+    </section>
+
+
+    <script>
+
+        const categories = [
+            {
+                id: "logo",
+                name: "Logo Embroidery",
+                description: "Explore our collection of custom embroidered logos, corporate branding and professional stitching samples."
+            },
+            {
+                id: "apparel",
+                name: "Apparel Branding",
+                description: "Discover our apparel embroidery projects, including uniforms, shirts, jackets and branded clothing."
+            },
+            {
+                id: "3D-puff",
+                name: "3D Puff",
+                description: "Explore our premium dimensional embroidery and raised 3D puff stitching projects."
+            },
+            {
+                id: "customOrder",
+                name: "Custom Orders",
+                description: "A collection of unique embroidery projects created for custom customer requirements."
+            },
+            {
+                id: "patches",
+                name: "Embroidery Patches",
+                description: "Browse our custom embroidered patches and detailed patch stitching work."
+            },
+            {
+                id: "applique",
+                name: "Applique",
+                description: "Explore our applique embroidery designs and creative fabric stitching projects."
+            },
+            {
+                id: "pet",
+                name: "Pet Embroidery",
+                description: "Discover our personalized pet embroidery artwork and designs."
+            },
+            {
+                id: "medicalStitch",
+                name: "Medical Stitch",
+                description: "Professional medical embroidery and branding projects."
+            },
+            {
+                id: "kids-sew-out",
+                name: "Kids Sew-Out",
+                description: "Explore creative embroidery samples designed for kids."
+            },
+            {
+                id: "cap-sew-out",
+                name: "Cap Sew-Out",
+                description: "Browse our cap embroidery, custom logos and professional headwear stitching."
+            },
+            {
+                id: "portraitStitch",
+                name: "Portrait Stitch",
+                description: "Detailed portrait embroidery and artistic stitching projects."
+            },
+            {
+                id: "tinyDetailedDesigns",
+                name: "Tiny Detailed Designs",
+                description: "Explore our small-scale embroidery projects with precise and detailed stitching."
+            }
+        ];
+
+
+        const params = new URLSearchParams(window.location.search);
+
+        const categoryId = params.get("category");
+
+        const category = categories.find(
+            x => x.id === categoryId
+        );
+
+
+        const grid = document.getElementById("portfolioDetailGrid");
+
+        const empty = document.getElementById("portfolioEmpty");
+
+
+        if (!category) {
+
+            document.getElementById("categoryTitle").textContent =
+                "Category Not Found";
+
+            document.getElementById("categoryDescription").textContent =
+                "The requested portfolio category does not exist.";
+
+            empty.style.display = "block";
+
+        } else {
+
+            document.getElementById("categoryTitle").textContent =
+                category.name;
+
+            document.getElementById("categoryDescription").textContent =
+                category.description;
+
+            loadCategoryProjects();
+
+        }
+
+
+        async function loadCategoryProjects() {
+
+            try {
+
+                const response = await fetch("index.html");
+
+                if (!response.ok) {
+                    throw new Error("Unable to load portfolio data.");
+                }
+
+                const html = await response.text();
+
+                const parser = new DOMParser();
+
+                const doc = parser.parseFromString(
+                    html,
+                    "text/html"
+                );
+
+                const items = doc.querySelectorAll(
+                    ".portfolio-source .shuffle-item"
+                );
+
+                let projectCount = 0;
+
+                items.forEach(item => {
+
+                    let groups = [];
+
+                    try {
+
+                        groups = JSON.parse(
+                            item.getAttribute("data-groups") || "[]"
+                        );
+
+                    } catch {
+                        return;
+                    }
+
+                    if (!groups.includes(category.id)) return;
+
+
+                    // Get images
+                    const images = item.querySelectorAll("img");
+
+                    images.forEach(img => {
+
+                        const src = img.getAttribute("src");
+
+                        if (!src) return;
+
+                        createGalleryItem(
+                            src,
+                            "image",
+                            img.getAttribute("alt") || category.name
+                        );
+
+                        projectCount++;
+
+                    });
+
+
+                    // Get videos, if available
+                    const videos = item.querySelectorAll("video");
+
+                    videos.forEach(video => {
+
+                        const source = video.querySelector("source");
+
+                        const src = video.getAttribute("src") ||
+                            (source && source.getAttribute("src"));
+
+                        if (!src) return;
+
+                        createGalleryItem(
+                            src,
+                            "video",
+                            "Embroidery Video"
+                        );
+
+                        projectCount++;
+
+                    });
+
+                });
+
+
+                document.getElementById("projectCount").textContent =
+                    projectCount;
+
+                if (projectCount === 0) {
+                    empty.style.display = "block";
+                }
+
+            } catch (error) {
+
+                console.error(error);
+
+                empty.style.display = "block";
+
+            }
+
+        }
+
+
+function createGalleryItem(src, type, title) {
+
+    const item = document.createElement("div");
+    item.className = "portfolio-detail-item";
+
+    if (type === "image") {
+
+        const img = document.createElement("img");
+
+        img.src = src;
+        img.alt = title;
+        img.loading = "lazy";
+
+        item.appendChild(img);
+
+    } 
+    else if (type === "video") {
+
+        const video = document.createElement("video");
+
+        // Resolve video path from index.html
+        const videoUrl = new URL(
+            src,
+            new URL("index.html", window.location.href)
+        ).href;
+
+        const extension = src.split("?")[0].split(".").pop().toLowerCase();
+
+        const mimeTypes = {
+            mp4: "video/mp4",
+            webm: "video/webm",
+            ogv: "video/ogg"
+        };
+
+        const source = document.createElement("source");
+
+        source.src = videoUrl;
+        source.type = mimeTypes[extension] || "video/mp4";
+
+        video.appendChild(source);
+
+        video.controls = true;
+        video.preload = "metadata";
+        video.playsInline = true;
+        video.muted = false;
+
+        video.addEventListener("error", function () {
+            console.error("Video loading failed:", videoUrl);
+        });
+
+        item.appendChild(video);
+
+    }
+
+    const label = document.createElement("div");
+
+    label.className = "portfolio-media-label";
+    label.textContent = title;
+
+    item.appendChild(label);
+
+    grid.appendChild(item);
+}
+
+    </script>
+
+<style>
+        body {
+            background: #fff;
+        }
+
+        .portfolio-empty {
+            text-align: center;
+            padding: 80px 20px;
+            color: #777;
+        }
+
+
+/* ===== CATEGORY PAGE OVERRIDE ===== */
+
+.portfolio-detail-hero {
+    background: #0b1d2b !important;
+    padding: 65px 0 !important;
+    margin: 0 0 50px !important;
+    text-align: left !important;
+}
+
+.portfolio-detail-hero h1 {
+    color: #fff !important;
+    font-size: 42px !important;
+    font-weight: 800 !important;
+    margin: 0 0 15px !important;
+}
+
+.portfolio-detail-hero p {
+    color: #c5cdd3 !important;
+    max-width: 650px;
+}
+
+.portfolio-detail-hero .portfolio-back-link {
+    color: #d29290 !important;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+/* Gallery grid */
+
+.portfolio-detail-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 25px !important;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.portfolio-detail-item {
+    width: 100% !important;
+    height: 280px !important;
+    min-height: 0 !important;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f3f3f3;
+}
+
+.portfolio-detail-item img,
+.portfolio-detail-item video {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive */
+
+@media(max-width: 991px) {
+    .portfolio-detail-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media(max-width: 575px) {
+    .portfolio-detail-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .portfolio-detail-item {
+        height: 250px !important;
+    }
+
+    .portfolio-detail-hero h1 {
+        font-size: 30px !important;
+    }
+}
+
+    </style>
+
+<section class="footer">
+	<div class="container">
+		<div class="row ">
+			<div class="col-lg-6">
+				<p class="mb-0">Copyrights © 2026. Designed & Developed by 
+					<a target="_blank" href="#" class="text-white">TechAsad</a> 
+				</p>
+			</div>
+			<div class="col-lg-6">
+				<div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
+					<ul class="list-inline mb-0">
+						<li class="list-inline-item"><a href="#!" target="_blank"><i class="ti-facebook mr-3"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="#!" target="_blank"><i class="ti-twitter mr-3"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="#!" target="_blank"><i class="ti-github mr-3"></i></a></li>
+						<li class="list-inline-item"><a href="#!" target="_blank"><i class="ti-pinterest mr-3"></i></a></li>
+						<li class="list-inline-item"><a href="#!" target="_blank"><i class="ti-dribbble mr-3"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+/* =========================================
+   FOOTER — EMBROIDERY THEME
+   Navy: #0b1d2b
+   Rose: #d29290
+   ========================================= */
+
+.footer {
+    background: #0b1d2b;
+    color: rgba(255, 255, 255, 0.75);
+    border-top: 3px solid #d29290;
+}
+
+/* Copyright Text */
+.footer p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Developer Link */
+.footer p a {
+    color: #d29290 !important;
+    transition: color 0.35s ease;
+}
+
+.footer p a:hover {
+    color: #ffffff !important;
+}
+
+/* Social Icons */
+.footer-widget ul li a {
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.35s ease;
+}
+
+.footer-widget ul li a:hover {
+    color: #d29290;
+}
+
+/* Slight icon animation */
+.footer-widget ul li a i {
+    transition: transform 0.35s ease, color 0.35s ease;
+}
+
+.footer-widget ul li a:hover i {
+    color: #d29290;
+    transform: translateY(-3px);
+}
+</style>
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="plugins/animated-text/animated-text.js"></script>
+<script src="plugins/counto/apear.js"></script>
+<script src="plugins/counto/counTo.js"></script>
+
+ <!-- Google Map -->
+<script src="plugins/google-map/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script> 
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</html>
